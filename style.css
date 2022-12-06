@@ -1,5 +1,17 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(assets/Images/Background.svg);
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 19px;
 }
