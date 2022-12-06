@@ -15,9 +15,18 @@ body {
 }
 
 nav {
-  display: flex;
-  justify-content: flex-end;
-  padding: 19px;
+  position: fixed;
+  top: 19px;
+  right: 19px;
+  background: radial-gradient(#fff4, #fff1);
+  border-radius: 50%;
+  box-shadow: 0 0 5px 5px #fff2;
+}
+
+#menu-icon {
+  font-size: 30px;
+  color: #1a2236;
+  cursor: pointer;
 }
 
 .headline {
@@ -41,21 +50,163 @@ nav {
   font-size: 14px;
   letter-spacing: -0.01em;
   color: #1a2236;
-  font-family: 'Poppin', sans-serif;
 }
 
-.headline-button {
+.primary-button {
   margin-top: 40px;
-  width: 288px;
+  width: 100%;
   height: 50px;
   background: #1a2236;
+  border: 1px solid #1a2236;
   font-weight: 500;
   font-size: 16px;
   color: #fff;
-  font-family: 'Poppins', sans-serif;
+  transition: 0.3s;
+}
+
+.primary-button:hover {
+  background-color: white;
+  cursor: pointer;
+  color: #1a2236;
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.primary-button:active {
+  border: 2px solid #1a2236;
 }
 
 .headline-image {
   margin-top: 16px;
   width: 100%;
+}
+
+.works-header {
+  margin-top: 40px;
+  margin-bottom: 32px;
+  margin-left: 16px;
+  font-weight: 400;
+  font-size: 50px;
+  color: #1a2236;
+  font-family: 'Playfair Display', sans-serif;
+}
+
+.works {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  background: #1a2236;
+}
+
+.project-info {
+  padding: 20px;
+}
+
+.project-title {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.project-tags {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.project-tag {
+  padding: 6px 10px 6px 10px;
+  background-color: #98dede;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10.3334px;
+  line-height: 80%;
+  color: #000;
+}
+
+.secondary-button {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  background: none;
+  border: 1px solid #fff;
+  padding: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.secondary-button:hover {
+  background-color: #fff;
+  cursor: pointer;
+  color: #1a2236;
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.about-myself {
+  display: flex;
+  flex-direction: column;
+  margin: 16px;
+}
+
+.about-header {
+  margin-top: 56px;
+}
+
+.about-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.ability-title {
+  margin-bottom: 21px;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.abilities ul {
+  font-weight: 500;
+  margin-bottom: 16px;
+  min-height: 290px;
+  padding: 50px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  color: #fff;
+  list-style-position: inside;
+}
+
+.abilities li {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: -0.0525em;
+}
+
+.languages {
+  background: url(assets/Images/languages.svg) #1c528a;
+}
+
+.frameworks {
+  background: url(assets/Images/frameworks.svg) #e2505c;
+}
+
+.skills {
+  background: url(assets/Images/skills.svg) #febf52;
 }
