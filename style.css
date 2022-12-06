@@ -21,13 +21,11 @@ nav {
   background: radial-gradient(#fff4, #fff1);
   border-radius: 50%;
   box-shadow: 0 0 5px 5px #fff2;
-  position: fixed;
 }
 
 #menu-icon {
   height: 20px;
   width: 30px;
-
   cursor: pointer;
 }
 
@@ -63,9 +61,6 @@ nav {
   font-weight: 500;
   font-size: 16px;
   color: #fff;
-}
-
-.primary-button {
   transition: 0.3s;
 }
 
@@ -148,9 +143,6 @@ nav {
   line-height: 24px;
   text-align: center;
   color: #fff;
-}
-
-.secondary-button {
   transition: 0.3s;
 }
 
