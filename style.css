@@ -24,8 +24,8 @@ nav {
 }
 
 #menu-icon {
-  height: 20px;
-  width: 30px;
+  font-size: 24px;
+  color: #1a2236;
   cursor: pointer;
 }
 
@@ -134,6 +134,7 @@ nav {
 
 .secondary-button {
   display: flex;
+  align-items: baseline;
   gap: 10px;
   background: none;
   border: 1px solid #fff;
