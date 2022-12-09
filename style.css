@@ -1,3 +1,7 @@
+/*============================== General styles ====================================*/
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Playfair Display:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
@@ -8,99 +12,149 @@
   font-family: 'Poppins', sans-serif;
 }
 
+nav {
+  color: #1a2236;
+  position: fixed;
+  top: 19px;
+  right: 16px;
+  font-size: 30px;
+  background: radial-gradient(#fff4, #fff1);
+  border-radius: 50%;
+  box-shadow: 0 0 5px 5px #fff2;
+  height: 34px;
+  width: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
 body {
   background: url(assets/Images/Background.svg);
   background-repeat: no-repeat;
   background-position: top left;
 }
 
-nav {
-  position: fixed;
-  top: 19px;
-  right: 19px;
-  background: radial-gradient(#fff4, #fff1);
-  border-radius: 50%;
-  box-shadow: 0 0 5px 5px #fff2;
-}
-
-#menu-icon {
-  font-size: 30px;
-  color: #1a2236;
-  cursor: pointer;
-}
-
-.headline {
+main {
   display: flex;
   flex-direction: column;
-  padding: 16px;
 }
 
-.Primary-text {
-  margin-top: 52px;
+#headline,
+#about-myself {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.primary-text {
+  font-family: 'Playfair Display', sans-serif;
   font-weight: 400;
   font-size: 50px;
-  line-height: 100%;
   color: #1a2236;
-  font-family: 'Playfair Display', sans-serif;
+  line-height: 100%;
 }
 
-.description {
-  margin-top: 20px;
+.secondary-text {
   font-weight: 400;
   font-size: 14px;
   letter-spacing: -0.01em;
   color: #1a2236;
+
 }
 
 .primary-button {
-  margin-top: 40px;
+  border: none;
   width: 100%;
   height: 50px;
   background: #1a2236;
-  border: 1px solid #1a2236;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 18px;
+  text-align: center;
   color: #fff;
   transition: 0.3s;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
-.primary-button:hover {
-  background-color: white;
-  cursor: pointer;
+.secondary-button {
+  height: 44px;
+  border: 1px solid #fff;
+  color: #fff;
+  background: #1a2236;
+  font-weight: 500;
+  font-size: 18px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+.primary-button:hover,
+.secondary-button:hover {
+  background-color: #fff;
+  border: 1px solid #1a2236;
   color: #1a2236;
   transition: 0.3s;
-  transition-timing-function: ease-in-out;
 }
 
-.primary-button:active {
+.primary-button:active, .secondary-button:active {
   border: 2px solid #1a2236;
 }
 
-.headline-image {
-  margin-top: 16px;
+.secondary-button:active {
+  padding: 9px;
+}
+
+
+
+/*============================== Headline styles ====================================*/
+
+
+
+#headline {
+  margin-top: 104px;
+  display: flex;
+  flex-direction: column;
+}
+
+#headline-text {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+#headline-image {
+  margin-top: 32px;
   width: 100%;
 }
+
+
+
+/*============================== Works styles ====================================*/
+
+
 
 .works-header {
   margin-top: 40px;
   margin-bottom: 32px;
-  margin-left: 16px;
-  font-weight: 400;
-  font-size: 50px;
-  color: #1a2236;
-  font-family: 'Playfair Display', sans-serif;
+  padding-right: 16px;
+  padding-left: 16px;
 }
 
-.works {
+#works {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
 }
 
 .project {
+  width: 100%;
+  background-color: #1a2236;
   display: flex;
   flex-direction: column;
-  background: #1a2236;
 }
 
 .project-info {
@@ -108,69 +162,72 @@ nav {
 }
 
 .project-title {
-  font-style: normal;
   font-weight: 300;
   font-size: 20px;
   color: #fff;
-  margin-bottom: 16px;
 }
 
 .project-tags {
   display: flex;
   gap: 10px;
-  list-style: none;
+  margin-top: 16px;
   margin-bottom: 20px;
 }
 
 .project-tag {
   padding: 6px 10px 6px 10px;
-  background-color: #98dede;
-  font-style: normal;
+  height: 20px;
+  background: #98dede;
   font-weight: 300;
   font-size: 10.3334px;
-  line-height: 80%;
-  color: #000;
-}
-
-.secondary-button {
-  display: flex;
-  align-items: baseline;
-  gap: 10px;
-  background: none;
-  border: 1px solid #fff;
-  padding: 10px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  text-align: center;
-  color: #fff;
-  transition: 0.3s;
-}
-
-.secondary-button:hover {
-  background-color: #fff;
-  cursor: pointer;
   color: #1a2236;
-  transition: 0.3s;
-  transition-timing-function: ease-in-out;
-}
-
-.about-myself {
-  display: flex;
-  flex-direction: column;
-  margin: 16px;
-}
-
-.about-header {
-  margin-top: 56px;
-}
-
-.about-button {
+  list-style: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+}
+
+
+
+/*============================== about-myself styles ====================================*/
+
+
+
+#about-myself {
+  display: flex;
+  flex-direction: column;
+  margin-top: 56px;
+}
+
+#about-text {
+  margin-top: 20px;
+  margin-bottom: 32px;
+}
+
+#about-button {
   margin-bottom: 40px;
+}
+
+#abilities {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+.ability {
+  width: 289px;
+  height: 289px;
+  list-style: inside;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-bottom: 53px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: -0.0525em;
+  color: #fff;
 }
 
 .ability-title {
@@ -178,35 +235,23 @@ nav {
   font-weight: 800;
   font-size: 20px;
   line-height: 30px;
+  color: #fff;
 }
 
-.abilities ul {
-  font-weight: 500;
-  margin-bottom: 16px;
-  min-height: 290px;
-  padding: 50px;
-  width: 100%;
+#languages {
+  background: url(assets/Images/languages.svg) #1c528a;
   background-repeat: no-repeat;
   background-position: bottom right;
-  color: #fff;
-  list-style-position: inside;
 }
 
-.abilities li {
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 27px;
-  letter-spacing: -0.0525em;
-}
-
-.languages {
-  background: url(assets/Images/languages.svg) #1c528a;
-}
-
-.frameworks {
+#frameworks {
   background: url(assets/Images/frameworks.svg) #e2505c;
+  background-repeat: no-repeat;
+  background-position: bottom right;
 }
 
-.skills {
+#skills {
   background: url(assets/Images/skills.svg) #febf52;
+  background-repeat: no-repeat;
+  background-position: bottom right;
 }
