@@ -1,6 +1,4 @@
-/*============================== General styles ====================================*/
-
-
+/* ============================== General styles ==================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair Display:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
@@ -102,7 +100,8 @@ main {
   transition: 0.3s;
 }
 
-.primary-button:active, .secondary-button:active {
+.primary-button:active,
+.secondary-button:active {
   border: 2px solid #1a2236;
 }
 
@@ -110,11 +109,7 @@ main {
   padding: 9px;
 }
 
-
-
-/*============================== Headline styles ====================================*/
-
-
+/* ================================= Headline styles ====================================== */
 
 #headline {
   margin-top: 104px;
@@ -132,11 +127,7 @@ main {
   width: 100%;
 }
 
-
-
-/*============================== Works styles ====================================*/
-
-
+/* ============================== Works styles ==================================== */
 
 .works-header {
   margin-top: 40px;
@@ -188,11 +179,7 @@ main {
   align-items: center;
 }
 
-
-
-/*============================== about-myself styles ====================================*/
-
-
+/* ============================== about-myself styles ==================================== */
 
 #about-myself {
   display: flex;
@@ -257,11 +244,7 @@ main {
   background-position: bottom right;
 }
 
-
-
-/*============================== Contact styles ====================================*/
-
-
+/* ======================================== Contact styles ==================================== */
 
 #contact {
   margin-top: 50px;
@@ -274,7 +257,7 @@ main {
   margin-top: 106px;
 }
 
-#contact-text{
+#contact-text {
   margin-top: 20px;
   margin-bottom: 32px;
 }
@@ -289,10 +272,10 @@ label {
   font-weight: 400;
   font-size: 10px;
   line-height: 15px;
-  color: #7d7C84;
+  color: #7d7c84;
 }
 
-form > div {
+form>div {
   padding-left: 16px;
   padding-top: 4px;
   display: flex;
@@ -304,7 +287,8 @@ form > div {
   border-radius: 4px;
 }
 
-#name, #mail {
+#name,
+#mail {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
