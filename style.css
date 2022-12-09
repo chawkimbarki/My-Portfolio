@@ -1,6 +1,4 @@
-/*============================== General styles ====================================*/
-
-
+/* ============================== General styles ==================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair Display:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
@@ -41,7 +39,8 @@ main {
 }
 
 #headline,
-#about-myself {
+#about-myself,
+#contact {
   padding-left: 16px;
   padding-right: 16px;
 }
@@ -59,7 +58,6 @@ main {
   font-size: 14px;
   letter-spacing: -0.01em;
   color: #1a2236;
-
 }
 
 .primary-button {
@@ -101,7 +99,8 @@ main {
   transition: 0.3s;
 }
 
-.primary-button:active, .secondary-button:active {
+.primary-button:active,
+.secondary-button:active {
   border: 2px solid #1a2236;
 }
 
@@ -109,11 +108,7 @@ main {
   padding: 9px;
 }
 
-
-
-/*============================== Headline styles ====================================*/
-
-
+/* ================================= Headline styles ====================================== */
 
 #headline {
   margin-top: 104px;
@@ -131,11 +126,7 @@ main {
   width: 100%;
 }
 
-
-
-/*============================== Works styles ====================================*/
-
-
+/* ============================== Works styles ==================================== */
 
 .works-header {
   margin-top: 40px;
@@ -187,11 +178,7 @@ main {
   align-items: center;
 }
 
-
-
-/*============================== about-myself styles ====================================*/
-
-
+/* ============================== about-myself styles ==================================== */
 
 #about-myself {
   display: flex;
@@ -217,7 +204,7 @@ main {
 }
 
 .ability {
-  width: 289px;
+  width: 100%;
   height: 289px;
   list-style: inside;
   padding-top: 50px;
@@ -254,4 +241,68 @@ main {
   background: url(assets/Images/skills.svg) #febf52;
   background-repeat: no-repeat;
   background-position: bottom right;
+}
+
+/* ======================================== Contact styles ==================================== */
+
+#contact {
+  margin-top: 50px;
+  background: url(assets/Images/Background.svg) #f9f9f9;
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+#contact-header {
+  margin-top: 106px;
+}
+
+#contact-text {
+  margin-top: 20px;
+  margin-bottom: 32px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+label {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 15px;
+  color: #7d7c84;
+}
+
+form > div {
+  padding-left: 16px;
+  padding-top: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  height: 52px;
+  background: #fff;
+  border: 1px solid #dfdfe0;
+  border-radius: 4px;
+}
+
+#name,
+#mail {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #1a2236;
+  border: none;
+  outline: none;
+}
+
+#message-input {
+  height: 112px;
+  margin-bottom: 16px;
+}
+
+#message {
+  outline: none;
+  border: none;
+  resize: none;
 }
