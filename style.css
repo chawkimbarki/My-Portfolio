@@ -40,7 +40,8 @@ main {
 
 #headline,
 #about-myself,
-#contact {
+#contact,
+footer {
   padding-left: 16px;
   padding-right: 16px;
 }
@@ -305,4 +306,41 @@ form > div {
   outline: none;
   border: none;
   resize: none;
+  height: 100%;
+}
+
+/* ======================================== Footer styles ==================================== */
+
+footer {
+  margin-top: 40px;
+  background-color: #1a2236;
+  padding-top: 32px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.footer-link {
+  display: flex;
+}
+
+.footer-link img {
+  transform: translateY(+25%);
+  margin-left: 15px;
+}
+
+.footer-link a {
+  text-decoration: none;
+  color: #92dcdc;
+}
+
+.social {
+  display: flex;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.social-icon {
+  width: 40px;
+  cursor: pointer;
 }
