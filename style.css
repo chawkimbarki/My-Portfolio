@@ -204,7 +204,7 @@ main {
 }
 
 .ability {
-  width: 289px;
+  width: 100%;
   height: 289px;
   list-style: inside;
   padding-top: 50px;
