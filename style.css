@@ -245,7 +245,7 @@ main {
   background-position: bottom right;
 }
 
-/*========================= Contact Styles ===================*/
+/* ========================= Contact Styles =================== */
 
 #contact {
   background: url(assets/Images/Background.svg) #f9f9fa;
@@ -273,7 +273,6 @@ input {
   border: none;
   outline: none;
 }
-
 
 #message {
   height: 112px;
