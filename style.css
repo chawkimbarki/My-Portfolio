@@ -298,3 +298,37 @@ input {
   padding-bottom: 8px;
   margin-bottom: 8px;
 }
+
+#resume-and-social-container {
+  margin-top: 40px;
+  background-color: #1a2236;
+  padding-top: 32px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.resume-link {
+  display: flex;
+}
+
+.resume-link img {
+  transform: translateY(+25%);
+  margin-left: 15px;
+}
+
+.resume-link a {
+  text-decoration: none;
+  color: #92dcdc;
+}
+
+.social {
+  display: flex;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.social-icon {
+  width: 40px;
+  cursor: pointer;
+}
