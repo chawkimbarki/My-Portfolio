@@ -139,42 +139,37 @@
                 </ul>
             </div>
         </section>
-        <section id="contact">
-            <h1 id="contact-header" class="primary-text">Get Started</h1>
-            <p id="contact-text" class="secondary-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ea eiusmod</p>
-            <form action="#">
-                <div id="name-input" class="input-container">
-                    <label for="name">Your name</label>
-                    <input type="text" id="name" name="name" value="">
-                </div>
-                <div id="mail-input" class="input-container">
-                    <label for="mail">Your email</label>
-                    <input type="email" id="mail" name="mail" value="">
-                </div>
-                <div id="message-input" class="input-container">
-                    <label for="message">Enter your message here...</label>
-                    <textarea type="text" id="message" name="message" value=""></textarea>
-                </div>
-                <button class="primary-button contact-button">Start Collaboration</button>
-            </form>
-        </section>
     </main>
     <footer>
-        <div class="footer-link">
-            <a href="#">Get my Resume <img src="assets/Images/footer-link-icon.svg" alt="CV"></a>
-        </div>
-        <div class="social">
-            <img class="social-icon" src="assets/Images/stackoverflow.svg" alt="StackOverFlow">
-            <img class="social-icon" src="assets/Images/github.svg" alt="Github">
-            <img class="social-icon" src="assets/Images/twitter.svg" alt="Twitter">
-            <img class="social-icon" src="assets/Images/linkedin.svg" alt="LinkedIn">
-            <img class="social-icon" src="assets/Images/m.svg" alt="M">
-            <img class="social-icon" src="assets/Images/hand.svg" alt="Hand">
+        <section id="contact">
+            <h1 id="contact-header" class="primary-text">Get Started</h1>
+            <p id="contact-text" class="secondary-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+            <form action="https://formspree.io/f/mdojqroq" method="post">
+                <div class="input-wrapper" id="name-input">
+                    <label for="name">Your Name</label>
+                    <input type="text" maxlength="30" required>
+                </div>
+                <div class="input-wrapper" id="email-input">
+                    <label for="email">Your Email</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <textarea required maxlength="500" name="message" id="message" cols="30" rows="10" placeholder="Enter your message here..."></textarea>
+                <button type="submit" id="contact-button" class="primary-button">Start Collaboration</button>
+            </form>
+        </section>
+        <div id="resume-and-social-container">
+            <div class="resume-link">
+                <a href="#">Get my Resume <img src="assets/Images/resume-link-icon.svg" alt="CV"></a>
+            </div>
+            <section class="social">
+                <img class="social-icon" src="assets/Images/stackoverflow.svg" alt="StackOverFlow">
+                <img class="social-icon" src="assets/Images/github.svg" alt="Github">
+                <img class="social-icon" src="assets/Images/twitter.svg" alt="Twitter">
+                <img class="social-icon" src="assets/Images/linkedin.svg" alt="LinkedIn">
+                <img class="social-icon" src="assets/Images/m.svg" alt="M">
+                <img class="social-icon" src="assets/Images/hand.svg" alt="Hand">
+            </section>
         </div>
     </footer>
 </body>
-
 </html>
