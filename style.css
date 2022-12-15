@@ -40,7 +40,8 @@ main {
 
 #headline,
 #about-myself,
-#contact {
+#contact,
+#resume-and-social-container {
   padding-left: 16px;
   padding-right: 16px;
 }
