@@ -1,13 +1,13 @@
 /* ============================== General styles ==================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair Display:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair Display:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 nav {
@@ -40,14 +40,13 @@ main {
 
 #headline,
 #about-myself,
-#contact,
-footer {
+#contact {
   padding-left: 16px;
   padding-right: 16px;
 }
 
 .primary-text {
-  font-family: 'Playfair Display', sans-serif;
+  font-family: "Playfair Display", sans-serif;
   font-weight: 400;
   font-size: 50px;
   color: #1a2236;
@@ -75,6 +74,7 @@ footer {
   gap: 20px;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .secondary-button {
@@ -90,6 +90,7 @@ footer {
   align-items: center;
   padding: 10px;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .primary-button:hover,
@@ -244,28 +245,21 @@ footer {
   background-position: bottom right;
 }
 
-/* ======================================== Contact styles ==================================== */
+/* ========================= Contact Styles =================== */
 
 #contact {
-  margin-top: 50px;
-  background: url(assets/Images/Background.svg) #f9f9f9;
-  background-position: top left;
+  background: url(assets/Images/Background.svg) #f9f9fa;
   background-repeat: no-repeat;
-}
-
-#contact-header {
-  margin-top: 106px;
+  background-position: left top;
+  margin-top: 50px;
+  padding-top: 106px;
 }
 
 #contact-text {
   margin-top: 20px;
   margin-bottom: 32px;
-}
-
-form {
   display: flex;
   flex-direction: column;
-  gap: 8px;
 }
 
 label {
@@ -275,43 +269,37 @@ label {
   color: #7d7c84;
 }
 
-form > div {
-  padding-left: 16px;
-  padding-top: 4px;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  height: 52px;
-  background: #fff;
-  border: 1px solid #dfdfe0;
-  border-radius: 4px;
-}
-
-#name,
-#mail {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  color: #1a2236;
+input {
   border: none;
   outline: none;
-}
-
-#message-input {
-  height: 112px;
-  margin-bottom: 16px;
 }
 
 #message {
+  height: 112px;
+  width: 100%;
   outline: none;
-  border: none;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #dfdfe0;
   resize: none;
-  height: 100%;
+  padding-top: 15px;
+  padding-left: 16px;
+  margin-bottom: 18px;
 }
 
-/* ======================================== Footer styles ==================================== */
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #dfdfe0;
+  padding-left: 16px;
+  padding-top: 4px;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+}
 
-footer {
+#resume-and-social-container {
   margin-top: 40px;
   background-color: #1a2236;
   padding-top: 32px;
@@ -321,16 +309,16 @@ footer {
   gap: 30px;
 }
 
-.footer-link {
+.resume-link {
   display: flex;
 }
 
-.footer-link img {
+.resume-link img {
   transform: translateY(+25%);
   margin-left: 15px;
 }
 
-.footer-link a {
+.resume-link a {
   text-decoration: none;
   color: #92dcdc;
 }
