@@ -1,13 +1,13 @@
 /* ============================== General styles ==================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair Display:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair Display:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 nav {
@@ -46,7 +46,7 @@ main {
 }
 
 .primary-text {
-  font-family: 'Playfair Display', sans-serif;
+  font-family: "Playfair Display", sans-serif;
   font-weight: 400;
   font-size: 50px;
   color: #1a2236;
@@ -74,6 +74,7 @@ main {
   gap: 20px;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .secondary-button {
@@ -89,6 +90,7 @@ main {
   align-items: center;
   padding: 10px;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .primary-button:hover,
@@ -241,4 +243,92 @@ main {
   background: url(assets/Images/skills.svg) #febf52;
   background-repeat: no-repeat;
   background-position: bottom right;
+}
+
+/* ========================= Contact Styles =================== */
+
+#contact {
+  background: url(assets/Images/Background.svg) #f9f9fa;
+  background-repeat: no-repeat;
+  background-position: left top;
+  margin-top: 50px;
+  padding-top: 106px;
+}
+
+#contact-text {
+  margin-top: 20px;
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 15px;
+  color: #7d7c84;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+#message {
+  height: 112px;
+  width: 100%;
+  outline: none;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #dfdfe0;
+  resize: none;
+  padding-top: 15px;
+  padding-left: 16px;
+  margin-bottom: 18px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #dfdfe0;
+  padding-left: 16px;
+  padding-top: 4px;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+}
+
+#resume-and-social-container {
+  margin-top: 40px;
+  background-color: #1a2236;
+  padding-top: 32px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.resume-link {
+  display: flex;
+}
+
+.resume-link img {
+  transform: translateY(+25%);
+  margin-left: 15px;
+}
+
+.resume-link a {
+  text-decoration: none;
+  color: #92dcdc;
+}
+
+.social {
+  display: flex;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.social-icon {
+  width: 40px;
+  cursor: pointer;
 }
